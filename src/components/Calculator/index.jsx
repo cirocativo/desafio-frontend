@@ -1,15 +1,15 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import MyForm from "../MyForm";
 import Results from "../Results";
 import "./styles.css";
 
 export default function Calculator() {
-  const [terte, setTerte] = useState(0);
+  const [response, setResponse] = useState({});
   return (
     <div className="calculatorContainer">
-      <MyForm setTerte={setTerte}></MyForm>
-      <Results terte={terte} />
+      <MyForm setResponse={setResponse}></MyForm>
+      <Results response={response} />
     </div>
   );
 }
