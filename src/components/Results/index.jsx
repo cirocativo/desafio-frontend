@@ -6,16 +6,16 @@ export default function Results({ response }) {
     <div className="resultsContainer">
       <h2>VOCÊ RECEBERÁ:</h2>
       <p>
-        Amanhã: <strong>R$ {response[1]}</strong>
+        Amanhã: <strong>R$ {response[1]},00</strong>
       </p>
       <p>
-        Em 15 dias: <strong>R$ {response[15]}</strong>
+        Em 15 dias: <strong>R$ {response[15]},00</strong>
       </p>
       <p>
-        Em 30 dias: <strong>R$ {response[30]}</strong>
+        Em 30 dias: <strong>R$ {response[30]},00</strong>
       </p>
       <p>
-        Em 90 dias: <strong>R$ {response[90]}</strong>
+        Em 90 dias: <strong>R$ {response[90]},00</strong>
       </p>
     </div>
   );

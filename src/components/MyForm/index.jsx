@@ -6,9 +6,13 @@ import * as yup from "yup";
 
 export default function MyForm({ setResponse }) {
   const schema = yup.object().shape({
-    amount: yup.string().required("Campo obrigatório"),
-    installments: yup.string().required("Campo obrigatório"),
-    mdr: yup.string().required("Campo obrigatório"),
+    amount: yup
+      .number()
+      .typeError("Precisa ser um número")
+      .min(1000, "O valor mínimo é 1000"),
+
+    installments: yup.number().typeError("Precisa ser um número"),
+    mdr: yup.number().typeError("Precisa ser um número"),
   });
 
   const {

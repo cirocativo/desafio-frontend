@@ -7,9 +7,13 @@ import "./styles.css";
 export default function Calculator() {
   const [response, setResponse] = useState({});
   return (
-    <div className="calculatorContainer">
-      <MyForm setResponse={setResponse}></MyForm>
-      <Results response={response} />
+    <div className="calculatorContainer ">
+      <div className="containerLeft innerContainer">
+        <MyForm setResponse={setResponse}></MyForm>
+      </div>
+      <div className="containerRight innerContainer">
+        <Results response={response} />
+      </div>
     </div>
   );
 }
