@@ -1,0 +1,9 @@
+.resultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.resultsContainer p {
+  color: blue;
+}
